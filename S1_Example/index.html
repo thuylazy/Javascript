@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML Tutorial</title>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+  <div>
+    Name: <input type="text" name="name" id="name"><br>
+    Age: <input type="text" name="age" id="age"><br>
+    <input id="submit" type="button" value="Submit">
+  </div>
+  <script>
+    // self executing function here
+    (function () {
+      var name = document.getElementById("name");
+      var age = document.getElementById("age");
+      document.getElementById("submit").onclick = function () {
+        console.log(name.value);
+        console.log(age.value);
+      };
+    })();
+  </script>
+
+</body>
+
+</html>
