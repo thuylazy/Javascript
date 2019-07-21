@@ -1,0 +1,3 @@
+function getValue(){
+    console.log("==========");
+}
